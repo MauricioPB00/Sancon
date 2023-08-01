@@ -1,10 +1,10 @@
+<!-- HTML -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width">
   <title>MW - Login</title>
 </head>
 
@@ -14,15 +14,16 @@
       <div class="login-page">
         <div class="login-box">
           <div class="img-box">
-            <form id="login-form" class="ant-form ant-form-horizontal">
-              <p class="login-form-title">Bem Vindo!</p>
-              <p>Entre com seu Login</p>
+            <div class="login-form">
+              <h1 class="login-form-title-h1">Bem Vindo!</h1>
+              <p class="login-form-p">Entre com seu Login</p>
 
               <div class="ant-row ant-form-item input-container">
                 <div class="ant-col ant-form-item-control">
                   <div class="ant-form-item-control-input">
-                    <div class="ant-form-item-control-input-content"><input type="email" placeholder="E-mail"
-                        id="login-form_username" class="ant-input" value=""></div>
+                    <div class="ant-form-item-control-input-content"><input type="text" placeholder="Username"
+                        id="login-form_username" class="ant-input" [(ngModel)]="dados.username">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -32,26 +33,25 @@
                   <div class="ant-form-item-control-input">
                     <div class="ant-form-item-control-input-content"><span
                         class="ant-input-affix-wrapper ant-input-password"><input placeholder="Senha" action="click"
-                          id="login-form_password" type="password" class="ant-input"><span
-                          class="ant-input-suffix"><span role="img" aria-label="eye-invisible" tabindex="-1"
-                            class="anticon anticon-eye-invisible ant-input-password-icon"><svg viewBox="64 64 896 896"
-                              focusable="false" data-icon="eye-invisible" width="1em" height="1em" fill="currentColor"
-                              aria-hidden="true"> <!-- ... ... --> </svg></span></span></span></div>
+                          id="login-form_password" type="password" class="ant-input" [(ngModel)]="dados.password">
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="ant-row ant-form-item">
                 <div class="ant-col ant-form-item-control">
                   <div class="ant-form-item-control-input">
-                    <div class="ant-form-item-control-input-content"><button type="submit"
-                        class="ant-btn ant-btn-primary login-form-button" onclick="Login()"><span>LOGIN</span></button></div>
+                    <button type="submit" class="ant-btn ant-btn-primary login-form-button"
+                      (click)="Login()"><span>LOGIN</span></button>
+
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
             <div class="login-illustration-wrapper"><img src="/assets/img/eletromw-logo.png"></div>
           </div>
-          
+
         </div>
       </div>
     </div>
