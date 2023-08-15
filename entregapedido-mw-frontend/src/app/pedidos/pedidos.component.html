@@ -1,0 +1,60 @@
+<app-menu></app-menu>
+
+<div class="container01">
+  <div class="container02">
+    <h1>PEDIDOS</h1>
+  </div>
+  <div class="busca">
+    <form (submit)="onSubmit()">
+      <input type="text" id="busca" name="busca" [(ngModel)]="buscaData.busca" required autocomplete="off">
+      <button type="submit">
+        <img src="../../assets/img/busca.png" alt="Buscar">
+      </button>
+    </form>
+  </div>
+  <!-- <div class="container03">
+  <table>
+    <tr>
+      <th>Pedido</th>
+      <th>Cliente</th>
+    </tr>
+
+    <tr *ngFor="let pedido of pedidos" (click)="mostrarDetalhesPedido(pedido)">
+      <td>{{ pedido.numero }}</td>
+      <td>{{ pedido.cliente }}</td>
+    </tr>
+  </table>
+</div> -->
+
+
+  <div class="container03">
+    <table>
+      <tr>
+        <th>Pedido</th>
+        <th>Cliente</th>
+      </tr>
+
+      <tr (click)="mostrarDetalhesPedido('Pedido 1', 'Cliente A')">
+        <td>142</td>
+        <td>Mauricio Perin</td>
+      </tr>
+
+      <tr (click)="mostrarDetalhesPedido('Pedido 2', 'Cliente B')">
+        <td>254</td>
+        <td>Luan Tavares</td>
+      </tr>
+
+      <tr (click)="mostrarDetalhesPedido('Pedido 3', 'Cliente C')">
+        <td>356</td>
+        <td>Andre Souza</td>
+      </tr>
+
+      <tr (click)="mostrarDetalhesPedido('Pedido 4', 'Cliente D')">
+        <td>498</td>
+        <td>Joao Carlos</td>
+      </tr>
+    </table>
+  </div>
+
+
+</div>

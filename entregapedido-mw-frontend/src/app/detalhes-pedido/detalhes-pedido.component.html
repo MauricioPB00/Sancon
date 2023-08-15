@@ -1,0 +1,96 @@
+<!-- <div class="container01">
+  <div class="container02">
+    <h1>DETALHES </h1>
+  </div>
+  <div class="container03">
+    <div class="row">
+      <div class="col-md-6">
+         <p><strong>Pedido:</strong> {{ pedidoDetalhes?.id }} 142</p> 
+        <p><strong>Cliente:</strong> {{ pedidoDetalhes?.cliente }} Mauricio Perin</p> 
+      </div>
+      <div class="col-md-4">
+         <p><strong>Data:</strong> {{ pedidoDetalhes?.data }} 10/08/2023</p> 
+        <div class="busca">
+            <form (submit)="onSubmit()">
+              <input type="text" id="busca" name="busca" [(ngModel)]="buscaData.busca" required placeholder="Digite o codBar" >
+              <button type="submit" id="openModalButton">
+                <img src="../../assets/img/busca.png" alt="Buscar" id="imgBotao" style="cursor: pointer;">
+            </button>
+            </form>
+        </div>        
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="itens-container">
+         <p class="itens"><strong>Itens:</strong> <br>{{ pedidoDetalhes?.itens }}  1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br></p>
+      </div>
+      <div class="itens-container">
+         <p class="itens"><strong>CodBar:</strong> <br>{{ pedidoDetalhes?.itens }} 98223 - 1 Cabo <br>88781 - 5- Cabo  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="modal" class="modal" >
+  <div class="modal-content">
+      <span class="close" id="closeModalButton">&times;</span>
+      <p>AAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+      <input type="text">
+  </div>
+</div> -->
+
+
+
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<app-menu></app-menu>
+<div class="container01">
+  <div class="container02">
+    <h1>DETALHES </h1>
+  </div>
+  <div class="container03">
+    <div class="row">
+      <div class="col-md-6">
+        <p><strong>Pedido:</strong> {{ pedidoDetalhes?.id }} 142</p>
+        <p><strong>Cliente:</strong> {{ pedidoDetalhes?.cliente }} Mauricio Perin</p>
+      </div>
+      <div class="col-md-4">
+        <p><strong>Data:</strong> {{ pedidoDetalhes?.data }} 10/08/2023</p>
+        <div class="busca">
+          <form (submit)="onSubmit()">
+            <input type="text" id="busca" name="busca" [(ngModel)]="buscaData.busca" required
+              placeholder="Digite o codBar" autocomplete="off">
+            <button type="submit" id="openModalButton">
+              <img src="../../assets/img/busca.png" alt="Buscar" id="imgBotao" style="cursor: pointer;">
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="itens-container">
+        <p class="itens"><strong>Itens:</strong> <br>{{ pedidoDetalhes?.itens }} 1 - Cabo <br>1 - Cabo <br>1 - Cabo
+          <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br></p>
+      </div>
+      <div class="itens-container">
+        <p class="itens"><strong>CodBar:</strong> <br>{{ pedidoDetalhes?.itens }} 5321 - 1 Cabo <br>4253 - 2 Cabo <br>
+        </p>
+      </div>
+    </div>
+    <button class="buttonFinalizar">Finalizar</button>
+  </div>
+</div>
+
+<div id="modal" class="modal" *ngIf="modalVisible">
+  <div class="modal-content">
+    <span class="close" id="closeModalButton" (click)="fecharModal()">&times;</span>
+    <h1>Quantidade de itens ?</h1>
+    <input type="text" id="modalButton" required placeholder="Quantos itens ?" autocomplete="off">
+    <button class="buttonOKmodal">OK</button>
+  </div>
+</div>

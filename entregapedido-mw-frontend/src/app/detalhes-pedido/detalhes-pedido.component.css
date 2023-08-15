@@ -1,0 +1,167 @@
+.container01 {
+  margin-top: 20px;
+  background: #d1e7fc;
+}
+
+.container02 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.6em;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.container03 {
+  background: #f0f0f0;
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.container03 p {
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-md-6 {
+  margin-bottom: 20px;
+}
+.col-md-4 {
+margin-left: 80px
+}
+
+/* Estilos para o botão */
+.btn-primary {
+  margin-left: 75px;
+  background: #b2d4f5;
+  margin-top: -10px;
+  color: #fff;
+  border: none;
+  padding: 15px 70px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4c9bf0;
+}
+
+
+
+/*  TAMANHO DA BUSCA */
+.busca form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+
+/* INPUT DA BUSCA */
+.busca input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* BORDA DO BOTAO DA IMAGEM */
+.busca button {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+/* TAMANHO DA IMAGEM */
+.busca button img {
+  width: 20px;
+  height: 20px;
+}
+
+.col-md-7 {
+  display: flex;
+}
+
+.itens-container {
+    margin-right: 143px;
+    margin-left: 80px;
+}
+
+.itens {
+  margin-bottom: 20px;
+}
+
+.buttonFinalizar {
+  min-width: 400px;
+  height: 40px;
+  letter-spacing: 0.1rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  background-color: #12d815;
+  border: 0;
+  font-size: 14px;
+  margin-top: 500px;
+  margin-bottom: 360px;
+}
+
+.modal {
+  text-align: center;
+  padding-top: 150px;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #c0c0c0;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  height: 12%;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal input[type="text"] {
+  border: 1dvb;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+  width: 85%;
+  height: 36%;
+  background-color: #e9e9e9;
+}
+.buttonOKmodal{
+  background-color: #12d815;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  height: 36%;
+  width: 15%;
+}

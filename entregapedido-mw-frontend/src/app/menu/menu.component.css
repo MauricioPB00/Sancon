@@ -1,0 +1,41 @@
+/* menu.component.css */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #d1e7fc; /* Cor de fundo do menu */
+    width: 100%; /* Largura do menu */
+    height: 3.5%;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 20px; /* Espaçamento entre os itens do menu */
+  }
+  
+  a {
+    text-decoration: none;
+    display: flex;
+    color: rgb(0, 0, 0); /* Cor dos links do menu */
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  a:hover {
+    color: #ffffff; /* Cor ao passar o mouse sobre os links */
+  }
+  
