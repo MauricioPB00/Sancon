@@ -49,6 +49,7 @@
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 <app-menu></app-menu>
+
 <div class="container01">
   <div class="container02">
     <h1>DETALHES </h1>
@@ -72,19 +73,44 @@
         </div>
       </div>
     </div>
-    <div class="col-md-7">
-      <div class="itens-container">
-        <p class="itens"><strong>Itens:</strong> <br>{{ pedidoDetalhes?.itens }} 1 - Cabo <br>1 - Cabo <br>1 - Cabo
-          <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br>1 - Cabo <br></p>
-      </div>
-      <div class="itens-container">
-        <p class="itens"><strong>CodBar:</strong> <br>{{ pedidoDetalhes?.itens }} 5321 - 1 Cabo <br>4253 - 2 Cabo <br>
-        </p>
-      </div>
-    </div>
+
+  </div>
+
+  <div class="container04">
+    <div class="table-container">
+    <table>
+      <tr>
+        <th>Qnt</th>
+        <th>Itens</th>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>Cabo</td>
+      </tr>
+
+      <tr>
+        <td>12</td>
+        <td>Cabo 23mm</td>
+      </tr>
+
+      <tr>
+        <td>32</td>
+        <td>Parafuso 5mm</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Cabo</td>
+      </tr>
+    </table>
+  </div>
+  <div class="button-container">
     <button class="buttonFinalizar">Finalizar</button>
   </div>
+  </div>
 </div>
+
+
 
 <div id="modal" class="modal" *ngIf="modalVisible">
   <div class="modal-content">

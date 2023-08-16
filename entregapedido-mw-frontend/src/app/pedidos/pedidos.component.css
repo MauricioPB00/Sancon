@@ -1,7 +1,9 @@
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 .container01 {
   background: #d1e7fc;
-  height: 100vh;
+  height: 100%  ;
   margin-top: 20px;
 }
 
@@ -59,14 +61,17 @@
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .container03 {
+  display: flex;
+  justify-content: center;
   background: #f0f0f0;
-  height: 100%;
   margin-top: 40px;
+  height: 100%;
 }
 
 table {
-  width: 100%;
+  width: 60%;
   border-collapse: collapse;
+  height: max-content;
 }
 
 td {
@@ -97,6 +102,7 @@ li {
 
 tr {
   transition: background-color 0.3s;
+  
 }
 
 tr:hover {
@@ -104,3 +110,17 @@ tr:hover {
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Estilos para telas médias e maiores */
+@media screen and (min-width: 1250px) {
+  table {
+    width: 60%; 
+  }
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 1200px) {
+  table {
+    width: 100%; 
+  }
+}

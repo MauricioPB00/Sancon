@@ -33,6 +33,7 @@ export class DetalhesPedidoComponent implements OnInit {
   }
 
   abrirModal() {
+    
     console.log('1111');
     this.modalVisible = true;
   }
